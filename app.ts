@@ -13,7 +13,7 @@ const MONGODB_URI = process.env.MONGODB_URI;
 app.use(bodyParser.json());
 //support application/x-www-form-urlencoded post data
 app.use(bodyParser.urlencoded({ extended: false }));
-mongoose.connect("mongodb+srv://jpsbastos:eHKT3pHAx@cluster0-fvvjr.mongodb.net/msc-tellco-shopping-cart?retryWrites=true", {
+mongoose.connect(MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 }, (err) => {
@@ -28,6 +28,6 @@ routePrv.routes(app);
 
 app.use(errorHandler);
 
-app.listen( 5002, () => {
-    console.log('Express server listening on port ' + 5002);
+app.listen( process.env.port || 5002, () => {
+    console.log('Express server listening on port ' + process.env.port || 5002);
 });
