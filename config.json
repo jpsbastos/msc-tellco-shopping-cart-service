@@ -1,0 +1,19 @@
+{
+  "connectionString": "mongodb+srv://jpsbastos:eHKT3pHAx@cluster0-fvvjr.mongodb.net/msc-tellco-products?retryWrites=true&w=majority",
+  "port": 5000,
+  "walmartApiKey": "7eksjp57nqzw9hnb9hsudh93",
+  "walmartBasePath": "http://api.walmartlabs.com",
+  "walmartAPIVersion": "v1",
+  "mongoDBs": {
+    "reviews": "msc-tellco-reviews",
+    "products": "msc-tellco-products",
+    "shoppingCart": "msc-tellco-shopping-cart"
+  },
+  "walmartEndpoints": {
+    "productLookup": "items",
+    "recommendations": "nbp",
+    "reviews": "reviews",
+    "search": "search",
+    "trends": "trends"
+  }
+}
