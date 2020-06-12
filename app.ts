@@ -28,6 +28,6 @@ routePrv.routes(app);
 
 app.use(errorHandler);
 
-app.listen( process.env.port || 5002, () => {
-    console.log('Express server listening on port ' + process.env.port || 5002);
+app.listen( process.env.PORT || 5000, () => {
+    console.log('Express server listening on port ' + process.env.PORT || 5000);
 });
